@@ -9,21 +9,24 @@ pipeline {
             HOME = '.'
     }
     stages {
-        stage('Build') {
+        stage('Install') {
             steps {
                 sh 'npm install' 
             }
         }
         stage('Test') { 
             steps {
-                sh './jenkins/scripts/test.sh' 
+                sh 'npm run test' 
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'npm run build' 
             }
         }
         stage('Deliver') { 
             steps {
-                sh './jenkins/scripts/deliver.sh' 
-                input message: 'Finished using the web site? (Click "Proceed" to continue)' 
-                sh './jenkins/scripts/kill.sh' 
+                sh 'npm publish --dry-run' 
             }
         }
     }
