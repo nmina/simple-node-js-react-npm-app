@@ -11,6 +11,7 @@ pipeline {
     stages {
         stage('Initial') {
             steps {
+                echo "Testing Initial \n\n\n\n ======================= ${env.Environment}."
                 echo 'Testing Initial \n\n\n\n =======================.' 
             }
         }
