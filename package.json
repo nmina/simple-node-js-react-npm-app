@@ -11,5 +11,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --coverage --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "publishConfig": {
+    "registry": "https://dev1.mesos.rccl.com/nexus/repository/npm-private/"
   }
 }

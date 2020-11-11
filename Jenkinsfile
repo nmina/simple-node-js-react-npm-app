@@ -27,7 +27,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'npm run build' 
+                sh 'npm run build'
+                sh 'npm pack .'
             }
         }
         stage('Deliver') { 
