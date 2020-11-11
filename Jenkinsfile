@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Initial') {
             steps {
-                echo 'Environment selected is $Environment.' 
+                echo 'Testing Initial \n\n\n\n =======================.' 
             }
         }
         stage('Install') {
