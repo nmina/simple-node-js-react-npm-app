@@ -9,6 +9,11 @@ pipeline {
             HOME = '.'
     }
     stages {
+        stage('Initial') {
+            steps {
+                echo 'Environment selected is $Environment.' 
+            }
+        }
         stage('Install') {
             steps {
                 sh 'npm install' 
