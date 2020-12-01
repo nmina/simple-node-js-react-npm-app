@@ -7,6 +7,7 @@
     "react-scripts": "1.0.14"
   },
   "scripts": {
+    "version": "echo $npm_package_version $npm_package_name",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --coverage --env=jsdom",
