@@ -1,2 +1,2 @@
-@Library('web-shared-library')
+@Library('web-shared-library') _
 webPipeline()
